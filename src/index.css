@@ -2,8 +2,10 @@
 
 @import "tailwindcss";
 @theme {
-  --color-primary: #d72027;
+  --color-primary: #8cd0c6ef;
   --color-secondary: #000000;
+  /* --color-primary: #d72027; */
+  /* --color-secondary: #000000; */
   --font-nato: "Noto Sans", "sans-serif";
 }
 
@@ -15,4 +17,8 @@
 }
 .sub-item {
   @apply hover:underline underline-offset-6 transition-all duration-500 ease-in-out;
+}
+
+.footer-underline {
+  @apply relative before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-current before:transition-all before:duration-300 before:ease-in-out hover:before:w-0;
 }

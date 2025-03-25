@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-green-800 text-white p-4 font-bold">
+    <nav className="bg-primary text-secondary p-4 font-bold">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-xl font-bold">
           <img src={Logo} alt="logo" className="w-28 h-12" />
@@ -124,6 +124,7 @@ const Navbar = () => {
               <div className="h-3 w-[2px] bg-black"></div>{" "}
               <button className="cursor-pointer text-[#5FB02E]">EN</button>
             </div>
+            {/* social icon */}
             <div className="flex space-x-4 mt-6">
               <div className="w-7 h-7 rounded-full bg-green-900 flex items-center justify-center">
                 <Link to="#">
