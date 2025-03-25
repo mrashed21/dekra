@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 const MainLayOut = () => {
   return (
     <>
+    <div className="font-nato">
       <header>
         <Navbar />
       </header>
@@ -14,6 +15,7 @@ const MainLayOut = () => {
       <footer>
         <Footer />
       </footer>
+      </div>
     </>
   );
 };
