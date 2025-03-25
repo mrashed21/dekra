@@ -10,12 +10,15 @@ const About = () => {
 
   return (
     <div className="container mx-auto py-12">
+      <div className="">
       <h1
-        className="text-6xl font-extrabold text-primary underline underline-offset-[30px]"
-        data-aos="fade-up"
+        className="text-6xl font-extrabold text-primary "
+        // data-aos="fade-up"
       >
         Why DEKRA?
       </h1>
+      <div className="border-b border-2 border-primary mt-10 w-[220px]"></div>
+      </div>
       <div className="flex items-center justify-center mt-20 gap-10">
         {/* left side */}
         <div data-aos="fade-right">
