@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+[data-aos] {
+  overflow: hidden; /* Hide overflow caused by animations */
+}
+
 @theme {
   --color-primary: #8cd0c6ef;
   --color-secondary: #000000;
