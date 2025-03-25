@@ -38,10 +38,10 @@ const Clients = () => {
   return (
     <div className=" py-16">
       <div className="container mx-auto">
-        <h1 className=" text-6xl font-extrabold text-primary ">
+        <h1 className=" text-3xl lg:text-6xl font-extrabold text-primary ml-5 ">
           DEKRA clients
         </h1>
-        <div className="border-b border-2 border-primary mt-10 w-[220px]"></div>
+        <div className="border-b border-2 border-primary mt-10 w-[220px] ml-5"></div>
       </div>
       {/* image gellary */}
       <div className="overflow-hidden w-full relative py-10 mt-20">
@@ -65,7 +65,7 @@ const Clients = () => {
         </motion.div>
 
         <div className="w-[70%] ml-20 ">
-          <h1 className=" text-3xl font-extrabold text-primary mt-20 ">
+          <h1 className="text-xl lg:text-3xl font-extrabold text-primary mt-20 ">
             A wide range of services in one place, innovation, flexibility and
             expertise — that’s DEKRA.
           </h1>

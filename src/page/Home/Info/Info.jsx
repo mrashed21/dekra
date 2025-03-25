@@ -16,10 +16,10 @@ const Info = () => {
       </h2>
       <hr className="mt-3 border-[#eee] border border-b-2" data-aos="fade-up" />
 
-      <div className="flex items-center justify-center gap-10 mt-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mt-10">
         {/* Left Side */}
         <motion.div
-          className="cursor-pointer overflow-hidden rounded-2xl"
+          className="cursor-pointer overflow-hidden  px-5 lg:px-0"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -28,7 +28,7 @@ const Info = () => {
           <img
             src="https://dekra-arbeit.hr/wp-content/uploads/2022/03/DEKRA-Blog-header-Nauc%CC%8Cite-kako-biti-samouvjereni.webp"
             alt="image"
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-125"
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-125 rounded-2xl"
           />
         </motion.div>
 
@@ -39,13 +39,15 @@ const Info = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="flex items-start gap-4">
-            <BiSolidRightArrow className="text-primary mt-1 text-2xl" />
+          <div className="flex items-start gap-4 px-5 lg:px-0">
             <div>
-              <h1 className="text-3xl font-bold text-primary">
+              <h1 className="text-3xl font-bold text-primary flex items-start gap-4 group">
+                <span className="text-primary mt-1 text-xl transition-transform duration-300 transform group-hover:translate-x-5">
+                  <BiSolidRightArrow />
+                </span>
                 Learn how to be confident in online meetings
               </h1>
-              <p className="text-secondary mt-2">
+              <p className="text-secondary mt-2 ml-10">
                 Most of us have recently digitized our way of doing business and
                 started new work principles. Online meetings were one of many
                 changes that have occurred in the workplace.
@@ -61,7 +63,7 @@ const Info = () => {
       />
 
       <motion.div
-        className="flex items-start gap-4 w-1/3 cursor-pointer"
+        className="flex items-start gap-4 w-full lg:w-1/3 cursor-pointer px-5 lg:px-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}

@@ -11,9 +11,9 @@ const Service = () => {
 
   return (
     <div className="py-16 bg-[#EEEEEE]">
-      <div className="container mx-auto flex justify-between items-center gap-10">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-10">
         {/* Left Side */}
-        <div className="space-y-8">
+        <div className="space-y-8 px-5 lg:px-0" data-aos="fade-up">
           <h2
             className="font-semibold ml-7 text-primary mb-10"
             data-aos="fade-up"
@@ -23,7 +23,7 @@ const Service = () => {
 
           <div className="" data-aos="fade-up">
             <div>
-              <h1 className="text-3xl font-bold text-primary flex items-start gap-4 group">
+              <h1 className="text-3xl font-bold text-primary flex  items-start gap-4 group">
                 <span className="text-primary mt-1 text-xl transition-transform duration-300 transform group-hover:translate-x-5">
                   <BiSolidRightArrow />
                 </span>
@@ -83,19 +83,22 @@ const Service = () => {
         </div>
 
         {/* Right Side */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-        >
-          <img
-            src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Meeting.webp"
-            alt="image"
-            className="rounded-4xl"
-            data-aos="zoom-in"
-          />
-        </motion.div>
+        <div className="px-5 lg:px-0">
+          {" "}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.8 }}
+          >
+            <img
+              src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Meeting.webp"
+              alt="image"
+              className="rounded-2xl lg:rounded-4xl"
+              data-aos="zoom-in"
+            />
+          </motion.div>
+        </div>
       </div>
     </div>
   );

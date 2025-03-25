@@ -11,17 +11,17 @@ const About = () => {
   return (
     <div className="container mx-auto py-12">
       <div className="">
-      <h1
-        className="text-6xl font-extrabold text-primary "
-        // data-aos="fade-up"
-      >
-        Why DEKRA?
-      </h1>
-      <div className="border-b border-2 border-primary mt-10 w-[220px]"></div>
+        <h1
+          className="text-3xl pl-5 lg:pl-0 lg:text-6xl font-extrabold text-primary "
+          // data-aos="fade-up"
+        >
+          Why DEKRA?
+        </h1>
+        <div className="border-b border-2 pl-5 lg:pl-0 border-primary mt-10 w-[220px]"></div>
       </div>
-      <div className="flex items-center justify-center mt-20 gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center mt-20 gap-10">
         {/* left side */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-right " className="px-5 lg:px-0">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -35,7 +35,7 @@ const About = () => {
           </motion.div>
         </div>
         {/* right side */}
-        <div data-aos="fade-left">
+        <div data-aos="fade-left" className="px-5 lg:px-0">
           <motion.div className="mb-10" data-aos="fade-up">
             <h1 className="text-3xl font-extrabold text-primary flex">
               <h1 className="mr-5"> 1.</h1> More than 18 years of experience

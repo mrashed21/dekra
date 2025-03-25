@@ -32,9 +32,9 @@ const Hero = () => {
         </div>
         {/* this container for "FOR COMPANIES" */}
         {activeTab === "FOR COMPANIES" && (
-          <div className="flex justify-between gap-10 ">
+          <div className="flex flex-col lg:flex-row justify-between gap-10 ">
             {/* left side */}
-            <div className="w-2/3">
+            <div className="w-full lg:w-2/3">
               <h1 className="text-4xl font-extrabold mt-10">
                 Simple solutions for challenges in the field of human resources,
                 event management and market research.
@@ -48,7 +48,7 @@ const Hero = () => {
               </button>
             </div>
             {/* right side */}
-            <div className="relative w-1/3   flex items-center justify-center">
+            <div className="relative w-full lg:w-1/3   flex items-center justify-center">
               {/* Main Image */}
               <img
                 src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Cover-slika.webp"
@@ -60,7 +60,7 @@ const Hero = () => {
               <img
                 src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/ELS-Party.webp"
                 alt="Top Right Image"
-                className="absolute top-20 -right-10 w-36 h-36 object-cover "
+                className="absolute top-10 lg:top-20 right-7 lg:-right-10 w-36 h-36 object-cover "
               />
 
               {/* Center Top Image */}
@@ -74,9 +74,9 @@ const Hero = () => {
         )}
         {/* this container for "FIND A JOB" */}
         {activeTab === "FIND A JOB" && (
-          <div className="flex justify-between gap-10 text-primary">
+          <div className="flex flex-col lg:flex-row justify-between gap-10 text-primary">
             {/* left side */}
-            <div className="w-2/3">
+            <div className="w-full lg:w-2/3">
               <h1 className="text-4xl font-extrabold mt-10 ">
                 A faster and easier path to short-term or long-term employment.
               </h1>
@@ -89,7 +89,7 @@ const Hero = () => {
               </button>
             </div>
             {/* right side */}
-            <div className="relative w-1/3   flex items-center justify-center">
+            <div className="relative w-full lg:w-1/3   flex items-center justify-center">
               {/* Main Image */}
               <img
                 src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Cover-slika-4.webp"
@@ -101,7 +101,7 @@ const Hero = () => {
               <img
                 src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Agencijski-rad.webp"
                 alt="Top Right Image"
-                className="absolute top-20 -right-16 w-40 h-40 object-cover "
+                className="absolute top-12 lg:top-20 right-10 lg:-right-16 w-40 h-40 object-cover "
               />
 
               {/* Center Top Image */}
