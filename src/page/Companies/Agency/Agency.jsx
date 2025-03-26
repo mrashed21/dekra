@@ -1,10 +1,36 @@
+// import React from "react";
+
+// const Agency = () => {
+//   return (
+//     <div className="container mx-auto">
+//      <div className="flex justify-between">
+//          {/*left-side  */}
+//       <div className="">
+//         <img
+//           src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Cover-slika-1.webp"
+//           alt="image"
+//         />
+//       </div>
+//       {/* right-side */}
+//       <div className="">
+//         <h2>For Agencies</h2>
+//         <h1>DEKRA is your reliable partner for human resources.</h1>
+//         <p>With our expertise your business is in safe hands.</p>
+//       </div>
+//      </div>
+//     </div>
+//   );
+// };
+
+// export default Agency;
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-const Info = () => {
+const Agency = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,7 +52,7 @@ const Info = () => {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://dekra-arbeit.hr/wp-content/uploads/2022/03/DEKRA-Blog-header-Nauc%CC%8Cite-kako-biti-samouvjereni.webp"
+            src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Cover-slika-1.webp"
             alt="image"
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-125 rounded-2xl"
           />
@@ -41,11 +67,12 @@ const Info = () => {
         >
           <div className="flex items-start gap-4 px-5 lg:px-0">
             <div>
+              <h2>For Agencies</h2>
               <h1 className="text-3xl font-bold text-primary flex items-start gap-4 group">
                 <span className="text-primary mt-1 text-xl transition-transform duration-300 transform group-hover:translate-x-5">
                   <BiSolidRightArrow />
                 </span>
-                Learn how to be confident in online meetings
+                DEKRA is your reliable partner for human resources. 
               </h1>
               <p className="text-secondary mt-2 ml-10">
                 Most of us have recently digitized our way of doing business and
@@ -87,4 +114,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Agency;

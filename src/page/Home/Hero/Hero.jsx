@@ -11,7 +11,7 @@ const Hero = () => {
           : "bg-[#eee] text-secondary"
       }
     >
-      <div className="container mx-auto p-4 pb-16">
+      <div className="container mx-auto p-4 py-20">
         <div className="flex items-center gap-5 font-semibold">
           <h4
             className={
@@ -119,3 +119,45 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// import React, { useState } from "react";
+// import Navbar from "../../../components/Navbar/Navbar";
+// // Import Navbar
+
+// const Hero = () => {
+//   const [activeTab, setActiveTab] = useState("FOR COMPANIES");
+
+//   // Define background colors for each section
+//   const bgColors = {
+//     "FOR COMPANIES": "bg-blue-600 text-white",
+//     "FIND A JOB": "bg-green-600 text-white",
+//   };
+
+//   return (
+//     <div className={`${bgColors[activeTab]} transition-all duration-500`}>
+//       <Navbar activeTab={activeTab} /> {/* Pass activeTab to Navbar */}
+//       <div className="container mx-auto p-4 pb-16">
+//         <div className="flex items-center gap-5 font-semibold">
+//           <h4
+//             className={`cursor-pointer ${
+//               activeTab === "FOR COMPANIES" ? "hero-active" : "nav-underline"
+//             }`}
+//             onClick={() => setActiveTab("FOR COMPANIES")}
+//           >
+//             FOR COMPANIES
+//           </h4>
+//           <h4
+//             className={`cursor-pointer ${
+//               activeTab === "FIND A JOB" ? "hero-active" : "nav-underline"
+//             }`}
+//             onClick={() => setActiveTab("FIND A JOB")}
+//           >
+//             FIND A JOB
+//           </h4>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
