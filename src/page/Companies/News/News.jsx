@@ -58,10 +58,7 @@ const News = () => {
         </motion.div>
       </div>
 
-      <hr
-        className="my-10 border-[#eee] border border-b-2"
-        data-aos="fade-up"
-      />
+      <hr className="my-10 border-[#eee] border border-b-2" />
 
       <motion.div
         className="flex items-start gap-4 w-full lg:w-1/3 cursor-pointer px-5 lg:px-0"
@@ -84,6 +81,7 @@ const News = () => {
           </p>
         </div>
       </motion.div>
+      <hr className="my-10 border-[#eee] border border-b-2" />
     </div>
   );
 };
