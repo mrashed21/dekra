@@ -1,7 +1,15 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { LuArrowDownRight } from "react-icons/lu";
+
 const Faq = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
+  }, []);
+
   const faqs = [
     {
       question: "Why work with a hiring agency?",
@@ -30,41 +38,53 @@ const Faq = () => {
         "DEKRA does not cover the cost of transportation that may be incurred when arriving or traveling for an interview with an agency or a potential employer. Sometimes employers cover the cost of transportation for candidates if they are expected to travel to attend the final rounds of interviews, but the first rounds of interviews are usually not covered by the travel allowance.",
     },
   ];
+  
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   return (
     <div className="bg-[#eee]">
-      <div className="container mx-auto flex justify-between gap-12 py-16">
-        <div className="w-full lg:w-1/3">
-          <h1 className="text-3xl font-extrabold text-primary ml-5 ">
+      <div
+        className="container mx-auto flex justify-between gap-12 py-16"
+        data-aos="fade-up"
+      >
+        <div className="w-full lg:w-1/3" data-aos="fade-right">
+          <h1 className="text-3xl font-extrabold text-primary ml-5">
             Frequently asked questions
           </h1>
           <div className="border-b border-2 border-primary mt-10 w-[220px] ml-5"></div>
         </div>
-        {/* faq */}
+
+        {/* FAQ Section */}
         <div className="w-full lg:w-2/3">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b py-4 border-[#b6b4b4]">
+            <div
+              key={index}
+              className="border-b py-4 border-[#b6b4b4]"
+              data-aos="fade-left"
+            >
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center text-left text-lg font-bold text-primary cursor-pointer"
               >
                 {faq.question}
-                {openIndex === index ? (
-                  <LuArrowDownRight className="ml-1 transition-transform duration-300 ease-in-out -rotate-90" />
-                ) : (
-                  <LuArrowDownRight className="" />
-                )}
+                <LuArrowDownRight
+                  className={`ml-1 transition-transform duration-300 ${
+                    openIndex === index ? "-rotate-90" : ""
+                  }`}
+                />
               </button>
+              
               {openIndex === index && (
                 <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="mt-2 text-gray-700"
+                  initial={{ opacity: 0, height: 0, y: -10 }}
+                  animate={{ opacity: 1, height: "auto", y: 0 }}
+                  exit={{ opacity: 0, height: 0, y: -10 }}
+                  transition={{ duration: 0.3 }}
+                  className="mt-2 text-gray-700 overflow-hidden"
                 >
                   {faq.answer}
                 </motion.div>

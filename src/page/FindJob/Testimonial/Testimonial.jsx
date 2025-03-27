@@ -1,5 +1,8 @@
-
-import React from "react";
+/* eslint-disable no-unused-vars */
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import React, { useEffect } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,9 +31,21 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="container mx-auto flex justify-between gap-32 my-20">
-      <h2 className="tracking-widest font-semibold text-primary">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto flex justify-between gap-32 my-20"
+    >
+      <h2
+        className="tracking-widest font-semibold text-primary"
+        data-aos="fade-right"
+      >
         TESTIMONIAL
       </h2>
 
@@ -43,8 +58,14 @@ const Testimonial = () => {
         className="w-full"
       >
         {testimonials.map((item, index) => (
-          <SwiperSlide key={index} className="">
-            <div className="flex gap-4 relative">
+          <SwiperSlide key={index}>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex gap-4 relative"
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
               <FaQuoteLeft className="text-3xl text-gray-500 mx-auto mb-4 absolute" />
               <div className="ml-12">
                 <h2 className="text-3xl text-primary font-bold leading-[48px] mb-4">
@@ -53,14 +74,14 @@ const Testimonial = () => {
                 <h4 className="text-3xl text-primary font-bold leading-[48px] mb-4">
                   {item.name}
                 </h4>
-                <p className="text-lg text-primary ">{item.position}</p>
+                <p className="text-lg text-primary">{item.position}</p>
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
         <div className="custom-pagination mt-10 flex justify-center space-x-2"></div>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

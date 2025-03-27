@@ -1,4 +1,5 @@
 import React from "react";
+import Info from "../Home/Info/Info";
 import AgencyTust from "./AgencyTust/AgencyTust";
 import Faq from "./FAQ/Faq";
 import FindHero from "./FIndHero/FindHero";
@@ -15,6 +16,7 @@ const FindJob = () => {
       <OpenPositions />
       <Testimonial />
       <Faq />
+      <Info />
     </div>
   );
 };
