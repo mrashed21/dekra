@@ -1,5 +1,6 @@
 import React from "react";
 import AgencyTust from "./AgencyTust/AgencyTust";
+import Faq from "./FAQ/Faq";
 import FindHero from "./FIndHero/FindHero";
 import Offer from "./Offer/Offer";
 import OpenPositions from "./OpenPositions/OpenPositions";
@@ -13,6 +14,7 @@ const FindJob = () => {
       <AgencyTust />
       <OpenPositions />
       <Testimonial />
+      <Faq />
     </div>
   );
 };
