@@ -6,6 +6,7 @@ import Companies from "../page/Companies/Companies";
 import FindJob from "../page/FindJob/FindJob";
 import Home from "../page/Home/Home";
 import InfoCorner from "../page/InfoCorner/InfoCorner";
+import Contact from "../page/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/dekra",
         element: <AboutDerka />,
+      },
+      {
+        path: "/contact",
+        element: <Contact/>,
       },
     ],
   },

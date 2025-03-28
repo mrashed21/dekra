@@ -24,6 +24,8 @@ const Navbar = () => {
         return "text-black";
       case "/dekra":
         return "text-white";
+      case "/contact":
+        return "text-black";
       default:
         return "text-white";
     }
