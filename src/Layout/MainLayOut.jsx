@@ -7,7 +7,7 @@ const MainLayOut = () => {
   return (
     <>
     <HelmetProvider>
-    <div className="font-nato">
+    <div className="font-nato ">
       <header>
         <Navbar />
       </header>
