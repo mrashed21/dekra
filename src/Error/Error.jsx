@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,7 @@ const Error = () => {
           className="absolute w-full h-full"
         >
           <motion.path
-            fill="#3b82f6"
+            fill="#8cd0c6ef"
             d="M43.6,-61.1C56.3,-53.7,67.7,-42,73.8,-27.9C79.8,-13.8,80.5,2.7,74.5,15.8C68.5,28.9,55.9,38.5,44,50.2C32.1,61.9,20.9,75.6,5.5,76.8C-9.9,78.1,-29.7,66.8,-43.7,53.1C-57.7,39.3,-65.9,23.1,-67.2,6.7C-68.5,-9.7,-62.9,-26.2,-51.9,-34.3C-40.9,-42.4,-24.5,-42,-9.5,-47.3C5.5,-52.7,22,-63.5,43.6,-61.1Z"
             transform="translate(100 100)"
             animate={{ scale: [1, 1.1, 1] }}
@@ -23,7 +24,7 @@ const Error = () => {
 
       {/* Content */}
       <div className="relative text-center z-10">
-        <h1 className="text-blue-500 font-bold text-9xl">404</h1>
+        <h1 className="text-secondary font-bold text-9xl">404</h1>
         <h4 className="mt-4 text-gray-800 dark:text-white text-2xl font-semibold">
           Oops! Page Not Found
         </h4>
@@ -31,7 +32,7 @@ const Error = () => {
           The page you're looking for doesn't exist or has been moved.
         </p>
         <Link to="/">
-          <button className="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition">
+          <button className="mt-6 bg-primary text-secondary px-6 py-2 rounded-lg shadow-md hover:bg-[#52a498ef] transition">
             Go Home
           </button>
         </Link>

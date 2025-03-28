@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Info from "../Home/Info/Info";
 import AgencyTust from "./AgencyTust/AgencyTust";
 import Faq from "./FAQ/Faq";
@@ -10,6 +11,9 @@ import Testimonial from "./Testimonial/Testimonial";
 const FindJob = () => {
   return (
     <div>
+      <Helmet>
+        <title>Find Job</title>
+      </Helmet>
       <FindHero />
       <Offer />
       <AgencyTust />

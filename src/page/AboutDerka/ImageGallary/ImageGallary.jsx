@@ -37,9 +37,9 @@ const ImageGallary = () => {
   }, []);
 
   return (
-    <div className=" py-16 bg-[#eee]">
+    <div className=" lg:py-16 bg-[#eee] pb-10 lg:pb-0">
       {/* image gellary */}
-      <div className="overflow-hidden w-full relative py-10">
+      <div className="overflow-hidden w-full relative lg:py-10">
         <motion.div
           ref={sliderRef}
           className="flex gap-5 cursor-grab"
@@ -58,8 +58,6 @@ const ImageGallary = () => {
             />
           ))}
         </motion.div>
-
-        
       </div>
     </div>
   );

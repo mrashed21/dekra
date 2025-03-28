@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
@@ -17,11 +19,22 @@ const CounterItem = ({ end, text, suffix = "" }) => {
   }, [inView]);
 
   return (
-    <motion.div ref={ref} className="text-center p-4">
+    <motion.div
+      ref={ref}
+      className="text-center p-4"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="text-center">
         <h2 className="text-5xl font-bold text-primary">
           {shouldCount && (
-            <CountUp start={0} end={end} duration={2} suffix={suffix} />
+            <CountUp
+              start={0}
+              end={end}
+              duration={2}
+              suffix={suffix}
+              separator=""
+            />
           )}
         </h2>
         <p className="mt-2 text-sm text-primary">{text}</p>
@@ -31,8 +44,12 @@ const CounterItem = ({ end, text, suffix = "" }) => {
 };
 
 const CompanyCounters = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className="flex justify-between container mx-auto px-4 py-12 ">
+    <div className="flex flex-col lg:flex-row justify-between container mx-auto px-4 py-12">
       <CounterItem
         end={1925}
         text="We are a part of DEKRA SE, established in 1925."
