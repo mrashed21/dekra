@@ -94,7 +94,7 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-      <hr className="border-b border-secondary mt-20 mb-10" />
+      <hr className="border-b-[1px] border-secondary mt-20 mb-10" />
     </div>
   );
 };
