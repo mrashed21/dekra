@@ -6,6 +6,7 @@ import Home from "../page/Home/Home";
 import Error from "../Error/Error";
 import Companies from "../page/Companies/Companies";
 import FindJob from "../page/FindJob/FindJob";
+import InfoCorner from "../page/InfoCorner/InfoCorner";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/find-job",
         element: <FindJob/>,
+      },
+      {
+        path: "/info-corner",
+        element: <InfoCorner/>,
       },
     ],
   },
