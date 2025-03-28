@@ -1,28 +1,4 @@
-// import React from "react";
-
-// const Agency = () => {
-//   return (
-//     <div className="container mx-auto">
-//      <div className="flex justify-between">
-//          {/*left-side  */}
-//       <div className="">
-//         <img
-//           src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Cover-slika-1.webp"
-//           alt="image"
-//         />
-//       </div>
-//       {/* right-side */}
-//       <div className="">
-//         <h2>For Agencies</h2>
-//         <h1>DEKRA is your reliable partner for human resources.</h1>
-//         <p>With our expertise your business is in safe hands.</p>
-//       </div>
-//      </div>
-//     </div>
-//   );
-// };
-
-// export default Agency;
+/* eslint-disable no-unused-vars */
 
 import AOS from "aos";
 import "aos/dist/aos.css";

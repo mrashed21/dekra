@@ -21,7 +21,7 @@ const images = [
   "https://dekra-arbeit.hr/wp-content/uploads/2022/04/JTI-logo-1-1.png",
 ];
 
-const Clients = () => {
+const ImageGallary = () => {
   const sliderRef = useRef(null);
   const [scrollX, setScrollX] = useState(0);
 
@@ -37,15 +37,9 @@ const Clients = () => {
   }, []);
 
   return (
-    <div className=" py-16">
-      <div className="container mx-auto">
-        <h1 className=" text-3xl lg:text-6xl font-extrabold text-primary ml-5 ">
-          DEKRA clients
-        </h1>
-        <div className="border-b border-2 border-primary mt-10 w-[220px] ml-5"></div>
-      </div>
+    <div className=" py-16 bg-[#eee]">
       {/* image gellary */}
-      <div className="overflow-hidden w-full relative py-10 mt-20">
+      <div className="overflow-hidden w-full relative py-10">
         <motion.div
           ref={sliderRef}
           className="flex gap-5 cursor-grab"
@@ -65,16 +59,10 @@ const Clients = () => {
           ))}
         </motion.div>
 
-        <div className="w-[70%] ml-20 ">
-          <h1 className="text-xl lg:text-3xl font-extrabold text-primary mt-20 ">
-            A wide range of services in one place, innovation, flexibility and
-            expertise — that’s DEKRA.
-          </h1>
-          <div className="border-b border-2 border-primary mt-10 w-[20%]"></div>
-        </div>
+        
       </div>
     </div>
   );
 };
 
-export default Clients;
+export default ImageGallary;
