@@ -7,6 +7,7 @@ import Error from "../Error/Error";
 import Companies from "../page/Companies/Companies";
 import FindJob from "../page/FindJob/FindJob";
 import InfoCorner from "../page/InfoCorner/InfoCorner";
+import AboutDerka from "../page/AboutDerka/AboutDerka";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/info-corner",
         element: <InfoCorner/>,
+      },
+      {
+        path: "/dekra",
+        element:<AboutDerka/>,
       },
     ],
   },
