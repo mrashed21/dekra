@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         {/* this container for "FOR COMPANIES" */}
         {activeTab === "FOR COMPANIES" && (
-          <div className="flex flex-col lg:flex-row justify-between gap-10 ">
+          <div className="flex flex-col lg:flex-row justify-between gap-10 px-5 lg:px-0">
             {/* left side */}
             <div className="w-full lg:w-2/3">
               <h1 className="text-4xl font-extrabold mt-10">
@@ -75,7 +75,7 @@ const Hero = () => {
         )}
         {/* this container for "FIND A JOB" */}
         {activeTab === "FIND A JOB" && (
-          <div className="flex flex-col lg:flex-row justify-between gap-10 text-primary">
+          <div className="flex flex-col lg:flex-row justify-between gap-10 text-primary px-5 lg:px-0">
             {/* left side */}
             <div className="w-full lg:w-2/3">
               <h1 className="text-4xl font-extrabold mt-10 ">

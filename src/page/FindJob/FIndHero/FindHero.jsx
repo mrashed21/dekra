@@ -19,7 +19,7 @@ const FindHero = () => {
       transition={{ duration: 1 }}
     >
       <div className='bg-[url("https://dekra-arbeit.hr/wp-content/themes/dekra/static/images/decor-light.webp")] bg-center bg-no-repeat bg-cover py-20'>
-        <div className="container mx-auto flex justify-between gap-10 mt-5">
+        <div className="container mx-auto flex flex-col lg:flex-row px-5 lg:px-0 justify-between gap-10 mt-5">
           {/* left-side */}
           <div className="w-full lg:w-1/2" data-aos="fade-right">
             <h2 className="tracking-widest font-semibold text-primary">

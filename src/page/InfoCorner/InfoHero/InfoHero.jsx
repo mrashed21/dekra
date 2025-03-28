@@ -3,7 +3,7 @@ import React from "react";
 const InfoHero = () => {
   return (
     <div className='bg-[url("https://dekra-arbeit.hr/wp-content/themes/dekra/static/images/decor-light.webp")] bg-center bg-no-repeat bg-cover py-20'>
-      <div className="container mx-auto mt-10">
+      <div className="container mx-auto mt-10 px-5 lg:px-0">
         <div className="w-full lg:w-2/3">
           <h3 className="tracking-widest font-semibold text-primary">
             INFO CORNER - BLOG

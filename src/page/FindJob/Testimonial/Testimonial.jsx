@@ -40,7 +40,7 @@ const Testimonial = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="container mx-auto flex justify-between gap-32 my-20"
+      className="container mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-32 my-20 px-5 lg:px-0"
     >
       <h2
         className="tracking-widest font-semibold text-primary"

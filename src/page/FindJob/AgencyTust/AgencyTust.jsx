@@ -16,12 +16,12 @@ const AgencyTust = () => {
       transition={{ duration: 1 }}
     >
       <div className="container mx-auto">
-        <h1 className="text-3xl lg:text-6xl font-extrabold text-primary ml-5" data-aos="fade-left">
+        <h1 className="text-3xl lg:text-6xl font-extrabold text-primary ml-5 " data-aos="fade-left">
           An agency <br /> you can trust
         </h1>
         <div className="border-b border-2 border-primary mt-10 w-[220px] ml-5" data-aos="fade-left"></div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 px-5 lg:px-0 mb-10 lg:mb-0">
           <div className="mb-16" data-aos="fade-up" data-aos-delay="200">
             <h1 className="text-2xl font-bold text-primary">
               1. <br />

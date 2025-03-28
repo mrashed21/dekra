@@ -48,7 +48,7 @@ const Faq = () => {
   return (
     <div className="bg-[#eee]">
       <div
-        className="container mx-auto flex justify-between gap-12 py-16"
+        className="container mx-auto flex flex-col lg:flex-row justify-between gap-12 py-16"
         data-aos="fade-up"
       >
         <div className="w-full lg:w-1/3" data-aos="fade-right">
@@ -59,7 +59,7 @@ const Faq = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-2/3 px-5 lg:px-0">
           {faqs.map((faq, index) => (
             <div
               key={index}

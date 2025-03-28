@@ -18,7 +18,7 @@ const Blog = () => {
     setIsOpen(false);
   };
   return (
-    <div className="container mx-auto my-20">
+    <div className="container mx-auto my-20 px-5 lg:px-0">
       <button
         onClick={toggleDropdown}
         className="flex items-center justify-between gap-2 w-fit px-4 py-2 text-left bg-[#F2F4F1] text-primary rounded-3xl hover:bg-gray-50 "

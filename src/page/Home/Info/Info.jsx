@@ -11,7 +11,7 @@ const Info = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-16">
+    <div className="container mx-auto py-16 px-5 lg:px-0">
       <h2 className="tracking-wider font-semibold" data-aos="fade-up">
         INFO CORNER
       </h2>

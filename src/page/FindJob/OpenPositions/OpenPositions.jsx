@@ -13,7 +13,7 @@ const OpenPositions = () => {
   return (
     <div className="relative">
       {/* top section */}
-      <div className="container mx-auto flex justify-between gap-10 mt-60 relative">
+      <div className="container mx-auto hidden lg:flex justify-between gap-10 lg:mt-60 relative">
         <img
           src="https://dekra-arbeit.hr/wp-content/uploads/2022/05/Student.webp"
           alt="image"
@@ -37,16 +37,16 @@ const OpenPositions = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="bg-primary py-20">
-          <div className="container mx-auto mt-64">
-            <div className="flex justify-between">
-              <div className="w-full lg:w-1/4">
-                <h2 className="tracking-widest font-semibold text-secondary">
+        <div className="bg-primary py-7 lg:py-20 ">
+          <div className="container mx-auto mt-10 lg:mt-64">
+            <div className="flex flex-col lg:flex-row justify-between">
+              <div className="w-full lg:w-1/4 px-5 lg:px-0">
+                <h2 className="tracking-widest font-semibold text-secondary ">
                   OPEN POSITIONS
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:w-3/4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:w-3/4 px-5 lg:px-0 mt-10 lg:mt-0">
                 {/* 01 */}
                 <div data-aos="fade-up" data-aos-delay="200">
                   <h2 className="text-2xl font-bold text-secondary">

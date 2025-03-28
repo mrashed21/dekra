@@ -169,11 +169,13 @@ const Navbar = () => {
       case "/":
         return "text-white";
       case "/for-companies":
-        return "text-black";
+        return "text-white";
       case "/find-job":
-        return "text-blue-500";
+        return "text-black";
       case "/info-corner":
-        return "text-red-500";
+        return "text-black";
+      case "/dekra":
+        return "text-white";
       default:
         return "text-green-500";
     }
@@ -208,7 +210,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          {isOpen ? <FiX size={24} color="black" /> : <FiMenu size={24} color="black" />}
         </button>
 
         {/* Desktop Menu */}
@@ -222,13 +224,13 @@ const Navbar = () => {
             </Link>
             <ul className="nav-dropdown">
               <li className="px-4 py-2 sub-item">
-                <Link to="/agency-work">AGENCY WORK</Link>
+                <Link to="/for-companies">AGENCY WORK</Link>
               </li>
               <li className="px-4 py-2 sub-item">
-                <Link to="/hr-consulting">HR CONSULTING</Link>
+                <Link to="/for-companies">HR CONSULTING</Link>
               </li>
               <li className="px-4 py-2 sub-item">
-                <Link to="/event-logistic">EVENT & LOGISTIC SERVICES</Link>
+                <Link to="/for-companies">EVENT & LOGISTIC SERVICES</Link>
               </li>
             </ul>
           </li>
@@ -244,13 +246,13 @@ const Navbar = () => {
             </Link>
             <ul className="nav-dropdown">
               <li className="px-4 py-2 sub-item">
-                <Link to="/blog">BLOG</Link>
+                <Link to="/info-corner">BLOG</Link>
               </li>
               <li className="px-4 py-2 sub-item">
-                <Link to="/case-studies">CASE STUDIES</Link>
+                <Link to="/info-corner">CASE STUDIES</Link>
               </li>
               <li className="px-4 py-2 sub-item">
-                <Link to="/faq">FAQ</Link>
+                <Link to="/info-corner">FAQ</Link>
               </li>
             </ul>
           </li>
@@ -263,10 +265,10 @@ const Navbar = () => {
             </Link>
             <ul className="nav-dropdown">
               <li className="px-4 py-2 sub-item">
-                <Link to="/about-us">ABOUT US</Link>
+                <Link to="/dekra">ABOUT US</Link>
               </li>
               <li className="px-4 py-2 sub-item">
-                <Link to="/news">NEWS</Link>
+                <Link to="/dekra">NEWS</Link>
               </li>
             </ul>
           </li>
